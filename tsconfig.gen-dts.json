@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "outDir": "dist/js",
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true,
+    "strictNullChecks": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "jsx": "react"
+  },
+  "include": [
+    "./src/*",
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./src/**/**.test.tsx",
+    "./src/**/**.test.ts",
+    "./src/**/**.stories.ts",
+    "./src/**/**.stories.tsx",
+    "./src/**/examples/**"
+  ]
+}

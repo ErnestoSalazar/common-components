@@ -1,8 +1,13 @@
 import React from 'react';
 
-function Button({}) {
+interface IButtonProps {
+  message: string
+  onClick: () => void
+}
+
+function Button({message, onClick} : IButtonProps) {
   return (
-    <button>Hello world!</button>
+    <button onClick={onClick}> {message}</button>
   );
 };
 
